@@ -2,6 +2,7 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   --primary: hsl(7, 79%, 59%);
+  --secondary: hsl(0, 0%, 67%);
 }
 
 .button-primary {
@@ -84,6 +85,8 @@
   font-style: normal;
 }
 
+/* HEADER */
+
 #header {
   background-color: var(--black);
   color: var(--white);
@@ -140,4 +143,72 @@
 }
 #header .button-secondary:hover span {
   text-shadow: none;
+}
+
+/* WORK */
+
+#work {
+  background-color: var(--black);
+}
+
+#work h1 {
+  color: var(--white);
+  font-size: 35px;
+  text-align: right;
+}
+
+#work .marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  align-self: center;
+}
+
+#work .marquee-item {
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: marquee-content;
+  animation-timing-function: linear;
+  font-size: 50px;
+  color: var(--white);
+}
+
+#work .marquee-item span {
+  margin-right: 20px;
+}
+
+#work .marquee:hover .marquee-item {
+  animation-play-state: paused;
+}
+
+#work .sport {
+  color: var(--secondary);
+}
+
+#work .song {
+  color: var(--white);
+}
+
+#work .entertainment {
+  color: var(--primary);
+}
+
+#work button {
+  float: right;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#work img {
+  width: 100%;
+}
+
+@keyframes marquee-content {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
