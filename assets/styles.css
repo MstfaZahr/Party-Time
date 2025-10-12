@@ -196,7 +196,7 @@
 
 #work button {
   float: right;
-  font-size: 25px;
+  font-size: 24px;
   letter-spacing: 2px;
 }
 
@@ -207,6 +207,103 @@
 @keyframes marquee-content {
   from {
     transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Equipment */
+
+#equipment {
+  background-color: var(--black);
+}
+
+#equipment h2 {
+  color: var(--secondary);
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+#equipment p {
+  color: var(--white);
+  font-size: 34px;
+  line-height: 45px;
+}
+
+#equipment button {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* Partners */
+
+#partners {
+  background-color: var(--black);
+}
+
+#partners h1 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--white);
+}
+
+/* #partners h1 {
+  font-size: 64px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--black);
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 10px 25px 5px 25px;
+  border-radius: 24px;
+} */
+
+#partners .logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+#partners .logos:before,
+#partners .logos:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+#partners .logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0 0 0));
+}
+
+#partners .logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0 0 0));
+}
+
+#partners .logo_items {
+  display: inline-block;
+  animation: 20s slides infinite linear;
+}
+
+/* #partners .logos:hover .logo_items {
+  animation-play-state: paused;
+} */
+
+#partners .logo_items img {
+  height: 200px;
+  margin: 0 30px;
+}
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
   }
   to {
     transform: translateX(-100%);
