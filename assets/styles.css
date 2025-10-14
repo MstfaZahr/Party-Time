@@ -1,7 +1,7 @@
 :root {
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
-  --primary: hsl(7, 79%, 59%);
+  --primary: hsl(57, 84%, 58%);
   --secondary: hsl(0, 0%, 67%);
 }
 
@@ -18,8 +18,12 @@
 .button-primary span {
   z-index: 1;
   position: relative;
-  color: var(--white);
+  color: var(--black);
   transition: all 0.3s ease;
+}
+
+.button-primary:hover span {
+  color: var(--white);
 }
 
 .button-primary::before {
@@ -48,10 +52,6 @@
   border-color: var(--primary);
 }
 
-.button-secondary:hover {
-  border-color: var(--white);
-}
-
 .button-secondary span {
   z-index: 1;
   position: relative;
@@ -70,7 +70,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--white);
+  background: var(--black);
   transform: translateY(100%);
   transition: all 0.3s ease;
 }
@@ -309,3 +309,170 @@
     transform: translateX(-100%);
   }
 }
+
+/* Socials */
+
+#socials {
+  background-color: var(--black);
+}
+
+#socials h1 {
+  font-size: 52px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--black);
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 10px 25px 5px 25px;
+  border-radius: 24px;
+}
+
+#socials h2 {
+  font-size: 18px;
+  color: var(--secondary);
+  letter-spacing: 2px;
+}
+
+#socials h3 {
+  font-size: 26px;
+  color: var(--white);
+  transition: color 0.5s;
+}
+
+#socials .col-2 {
+  font-size: 43px;
+  color: var(--white);
+  padding: 0;
+  transition: color 0.5s;
+}
+
+#socials .whatsapp:hover .col-2 {
+  color: #20d466;
+}
+
+#socials .whatsapp h3:hover {
+  color: #20d466;
+}
+
+#socials .instagram:hover .col-2 {
+  color: #ff00bc;
+}
+
+#socials .instagram h3:hover {
+  color: #ff00bc;
+}
+
+#socials .facebook:hover .col-2 {
+  color: #1178f2;
+}
+
+#socials .facebook h3:hover {
+  color: #1178f2;
+}
+
+#socials .mail:hover .col-2 {
+  color: #1ac3fb;
+}
+
+#socials .mail h3:hover {
+  color: #1ac3fb;
+}
+
+#socials a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none;
+}
+#socials a:hover,
+#socials a:visited,
+#socials a:focus,
+#socials a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Team */
+
+#team {
+  background-color: var(--secondary);
+}
+
+#team h1 {
+  color: var(--black);
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background-color: var(--black);
+  border-radius: 25px;
+  border: 5px solid var(--black);
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+#team h3 {
+  font-size: 32px;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
+#team p {
+  font-size: 24px;
+  color: var(--white);
+}
+
+/* #team .custom-button-next,
+#team .custom-button-prev {
+  color: var(--black);
+  width: 20px;
+}
+
+#team .custom-button-next {
+  right: var(--swiper-navigation-sides-offset, 20px);
+}
+
+#team .custom-button-prev {
+  left: var(--swiper-navigation-sides-offset, 20px);
+} */
+
+.custom-button-next,
+.custom-button-prev {
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: var(--black);
+  font-size: 42px;
+  /* width: 45px;
+  height: 45px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-button-prev {
+  left: 20px;
+}
+.custom-button-next {
+  right: 20px;
+}
+
+.custom-button-next:hover,
+.custom-button-prev:hover {
+  color: #fff;
+}
+
+/*  */
