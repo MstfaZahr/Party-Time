@@ -85,10 +85,13 @@
   font-style: normal;
 }
 
+body {
+  background-color: var(--black) !important;
+}
+
 /* HEADER */
 
 #header {
-  background-color: var(--black);
   color: var(--white);
   height: 100svh;
   position: relative;
@@ -146,10 +149,6 @@
 }
 
 /* WORK */
-
-#work {
-  background-color: var(--black);
-}
 
 #work h1 {
   color: var(--white);
@@ -215,10 +214,6 @@
 
 /* Equipment */
 
-#equipment {
-  background-color: var(--black);
-}
-
 #equipment h2 {
   color: var(--secondary);
   font-size: 24px;
@@ -237,10 +232,6 @@
 }
 
 /* Partners */
-
-#partners {
-  background-color: var(--black);
-}
 
 #partners h1 {
   font-size: 80px;
@@ -311,10 +302,6 @@
 }
 
 /* Socials */
-
-#socials {
-  background-color: var(--black);
-}
 
 #socials h1 {
   font-size: 52px;
@@ -475,4 +462,114 @@
   color: #fff;
 }
 
-/*  */
+/* Contact US */
+
+#contact h1 {
+  font-size: 100px;
+  color: var(--primary);
+  margin-bottom: 0;
+}
+
+#contact h4 {
+  color: var(--secondary);
+  font-size: 48px;
+  margin-bottom: 96px;
+}
+
+#contact h5 {
+  color: var(--white);
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 48px;
+}
+
+#contact form .row {
+  box-shadow: 0px 0px 300px 20px hsla(57, 84%, 58%, 0.15);
+  border-radius: 20px;
+  transition: all 0.5s;
+  background-color: hsl(0, 0%, 10%);
+  padding: 60px 50px;
+}
+
+#contact form .row:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 300px 50px hsla(57, 84%, 58%, 0.15);
+}
+
+#contact input,
+#contact textarea {
+  margin-bottom: 20px;
+  background-color: hsl(0, 0%, 10%);
+  border: 0;
+  font-size: 36px;
+  border-bottom: 3px solid var(--secondary);
+  color: var(--white);
+  margin-bottom: 48px;
+  transition: all 0.5s;
+  padding: 0;
+}
+
+#contact input:focus,
+#contact textarea:focus,
+#contact input:hover,
+#contact textarea:hover {
+  border-color: var(--primary);
+  outline: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: transparent;
+}
+
+#contact button {
+  width: 200px;
+  height: 75px;
+  font-size: 32px;
+}
+
+.input-group {
+  position: relative;
+  padding: 0 !important;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: var(--secondary);
+  font-size: 36px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* لما يكون الـinput عليه focus أو فيه كتابة */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -25px;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+label span {
+  font-size: 20px;
+}
+
+#contact .col-2 {
+  text-align: right;
+}
