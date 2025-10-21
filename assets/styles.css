@@ -191,6 +191,83 @@ body {
   text-shadow: none;
 }
 
+/* SERVICES */
+
+#services h1 {
+  color: var(--primary);
+  text-align: center;
+  font-size: 96px;
+  letter-spacing: 2px;
+}
+
+#services h2 {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 48px;
+  max-width: 1043px;
+  margin-bottom: 80px;
+  justify-self: center;
+}
+
+#services .row {
+  justify-content: space-between;
+}
+
+#services .service {
+  border: 3px solid var(--white);
+  max-width: 365px;
+  position: relative;
+  transition: all 0.5s;
+  align-content: end;
+}
+
+#services .service:hover {
+  border: 3px solid var(--primary);
+  transform: translateY(-10px);
+}
+#services .service:hover path {
+  fill: var(--primary);
+}
+#services .service:hover h3 {
+  color: var(--primary);
+}
+
+#services .service::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 100px;
+  height: 100px;
+  background: var(--black);
+}
+
+#services svg {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 10;
+}
+
+#services path {
+  fill: var(--white);
+  transition: all 0.5s;
+}
+
+#services h3 {
+  color: var(--secondary);
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+#services h4 {
+  color: var(--white);
+}
+
 /* WORK */
 
 #work h1 {
