@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Party Time - Concersts Specialists</title>
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="https://partytimesa.com/assets/styles.css" />
+    <link rel="icon" href="media/images/logo.png" type="image/png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
     </style>
@@ -20,17 +21,82 @@
     />
   </head>
   <body>
+    <!-- NAVBAR -->
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="https://partytimesa.com/media/images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body justify-content-end">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://partytimesa.com/about-us/"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://partytimesa.com/our-work/"
+                  >Our Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://partytimesa.com/sfx-equipment/"
+                  >SFX Equipment</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://partytimesa.com/contact-us/"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- HEADER -->
     <div id="header" class="d-flex">
       <video autoplay loop muted playsinline>
-        <source src="media/videos/header.mp4" type="video/mp4" />
+        <source
+          src="https://partytimesa.com/media/videos/header.mp4"
+          type="video/mp4"
+        />
       </video>
       <div class="container text-center align-content-center">
         <h1 class="mb-4">We Are <span>Party Time</span>!</h1>
         <h2 class="mb-5">Empowering every event with spectacular effects</h2>
-        <button class="button-secondary me-3 py-3 px-5">
-          <span>Our Work</span>
-        </button>
+        <a href="https://partytimesa.com/our-work/"
+          ><button class="button-secondary me-3 py-3 px-5">
+            <span>Our Work</span>
+          </button></a
+        >
+
         <a href="https://partytimesa.com/contact-us/"
           ><button class="button-primary py-3 px-5">
             <span>Contact Us</span>
@@ -124,12 +190,14 @@
                 <span class="song">Asala Nasri</span>
               </div>
             </div>
-            <button class="button-primary py-3 px-5 mt-4">
-              <span>Our Work</span>
-            </button>
+            <a href="https://partytimesa.com/our-work/"
+              ><button class="button-primary py-3 px-5 mt-4">
+                <span>Our Work</span>
+              </button></a
+            >
           </div>
           <div class="col-6 align-content-center">
-            <img src="media/images/work.png" />
+            <img src="https://partytimesa.com/media/images/work.png" />
           </div>
         </div>
       </div>
@@ -141,7 +209,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6 text-center">
-            <img src="media/images/equipment.png" />
+            <img src="https://partytimesa.com/media/images/equipment.png" />
           </div>
           <div class="col-6 align-self-center">
             <h2 class="mb-3">SFX EQUIPMENT</h2>
@@ -151,9 +219,11 @@
               use industry-leading technology to create stunning, safe and fully
               customizable special effects that elevate every performance.
             </p>
-            <button class="button-primary py-3 px-5">
-              <span>View Equipment</span>
-            </button>
+            <a href="https://partytimesa.com/sfx-equipment/"
+              ><button class="button-primary py-3 px-5">
+                <span>View Equipment</span>
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -168,25 +238,25 @@
           <div class="swiper-wrapper">
             <!-- كل سلايد -->
             <div class="swiper-slide">
-              <img src="/media/images/team1.jpg" />
+              <img src="https://partytimesa.com/media/images/team1.jpg" />
               <h3 class="mt-3">David Lowell</h3>
               <p>Sales Manager</p>
             </div>
 
             <div class="swiper-slide">
-              <img src="/media/images/team1.jpg" />
+              <img src="https://partytimesa.com/media/images/team1.jpg" />
               <h3 class="mt-3">Bryan Terwilliger</h3>
               <p>Sales Manager</p>
             </div>
 
             <div class="swiper-slide">
-              <img src="/media/images/team1.jpg" />
+              <img src="https://partytimesa.com/media/images/team1.jpg" />
               <h3 class="mt-3">James Morris</h3>
               <p>Project & Rigging Manager</p>
             </div>
 
             <div class="swiper-slide">
-              <img src="/media/images/team1.jpg" />
+              <img src="https://partytimesa.com/media/images/team1.jpg" />
               <h3 class="mt-3">Drew Alley</h3>
               <p>Project Manager & Lighting Lead</p>
             </div>
@@ -210,38 +280,38 @@
         <h1 class="my-5">Our Success Partners</h1>
         <div class="logos">
           <div class="logo_items">
-            <img src="/media/images/partner1.png" />
-            <img src="/media/images/partner2.png" />
-            <img src="/media/images/partner3.png" />
-            <img src="/media/images/partner4.png" />
-            <img src="/media/images/partner5.png" />
-            <img src="/media/images/partner6.png" />
-            <img src="/media/images/partner7.png" />
-            <img src="/media/images/partner8.png" />
-            <img src="/media/images/partner9.png" />
-            <img src="/media/images/partner10.png" />
-            <img src="/media/images/partner11.png" />
-            <img src="/media/images/partner12.png" />
-            <img src="/media/images/partner13.png" />
-            <img src="/media/images/partner14.png" />
-            <img src="/media/images/partner15.png" />
+            <img src="https://partytimesa.com/media/images/partner1.png" />
+            <img src="https://partytimesa.com/media/images/partner2.png" />
+            <img src="https://partytimesa.com/media/images/partner3.png" />
+            <img src="https://partytimesa.com/media/images/partner4.png" />
+            <img src="https://partytimesa.com/media/images/partner5.png" />
+            <img src="https://partytimesa.com/media/images/partner6.png" />
+            <img src="https://partytimesa.com/media/images/partner7.png" />
+            <img src="https://partytimesa.com/media/images/partner8.png" />
+            <img src="https://partytimesa.com/media/images/partner9.png" />
+            <img src="https://partytimesa.com/media/images/partner10.png" />
+            <img src="https://partytimesa.com/media/images/partner11.png" />
+            <img src="https://partytimesa.com/media/images/partner12.png" />
+            <img src="https://partytimesa.com/media/images/partner13.png" />
+            <img src="https://partytimesa.com/media/images/partner14.png" />
+            <img src="https://partytimesa.com/media/images/partner15.png" />
           </div>
           <div class="logo_items">
-            <img src="/media/images/partner1.png" />
-            <img src="/media/images/partner2.png" />
-            <img src="/media/images/partner3.png" />
-            <img src="/media/images/partner4.png" />
-            <img src="/media/images/partner5.png" />
-            <img src="/media/images/partner6.png" />
-            <img src="/media/images/partner7.png" />
-            <img src="/media/images/partner8.png" />
-            <img src="/media/images/partner9.png" />
-            <img src="/media/images/partner10.png" />
-            <img src="/media/images/partner11.png" />
-            <img src="/media/images/partner12.png" />
-            <img src="/media/images/partner13.png" />
-            <img src="/media/images/partner14.png" />
-            <img src="/media/images/partner15.png" />
+            <img src="https://partytimesa.com/media/images/partner1.png" />
+            <img src="https://partytimesa.com/media/images/partner2.png" />
+            <img src="https://partytimesa.com/media/images/partner3.png" />
+            <img src="https://partytimesa.com/media/images/partner4.png" />
+            <img src="https://partytimesa.com/media/images/partner5.png" />
+            <img src="https://partytimesa.com/media/images/partner6.png" />
+            <img src="https://partytimesa.com/media/images/partner7.png" />
+            <img src="https://partytimesa.com/media/images/partner8.png" />
+            <img src="https://partytimesa.com/media/images/partner9.png" />
+            <img src="https://partytimesa.com/media/images/partner10.png" />
+            <img src="https://partytimesa.com/media/images/partner11.png" />
+            <img src="https://partytimesa.com/media/images/partner12.png" />
+            <img src="https://partytimesa.com/media/images/partner13.png" />
+            <img src="https://partytimesa.com/media/images/partner14.png" />
+            <img src="https://partytimesa.com/media/images/partner15.png" />
           </div>
         </div>
       </div>
@@ -305,6 +375,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/app.js"></script>
+    <script src="https://partytimesa.com/assets/app.js"></script>
   </body>
 </html>
