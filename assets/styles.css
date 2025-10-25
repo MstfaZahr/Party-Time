@@ -222,14 +222,17 @@ body {
   margin-bottom: 72px;
 }
 
-#services .service:hover {
+#services .service:hover,
+#services .hover-effect {
   border: 3px solid var(--primary);
   transform: translateY(-10px);
 }
+#services .hover-effect path,
 #services .service:hover path {
   fill: var(--primary);
 }
-#services .service:hover h3 {
+#services .service:hover h3,
+#services .hover-effect h3 {
   color: var(--primary);
 }
 
