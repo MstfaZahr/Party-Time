@@ -161,11 +161,11 @@ body {
 }
 
 #header h1 {
-  font-size: min(20svh, 11svw);
+  font-size: min(16svh, 22svw);
 }
 
 #header h2 {
-  font-size: min(8svh, 4svw);
+  font-size: min(6svh, 7svw);
 }
 
 #header h1 span {
@@ -196,29 +196,30 @@ body {
 #services h1 {
   color: var(--primary);
   text-align: center;
-  font-size: 96px;
+  font-size: 64px;
   letter-spacing: 2px;
 }
 
 #services h2 {
   color: var(--secondary);
   text-align: center;
-  font-size: 48px;
+  font-size: 28px;
   max-width: 1043px;
   margin-bottom: 80px;
   justify-self: center;
 }
 
 #services .row {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #services .service {
   border: 3px solid var(--white);
-  max-width: 365px;
+  max-width: 290px;
   position: relative;
   transition: all 0.5s;
   align-content: end;
+  margin-bottom: 72px;
 }
 
 #services .service:hover {
@@ -272,8 +273,8 @@ body {
 
 #work h1 {
   color: var(--white);
-  font-size: 35px;
-  text-align: right;
+  font-size: 36px;
+  text-align: center;
 }
 
 #work .marquee {
@@ -314,9 +315,12 @@ body {
 }
 
 #work button {
-  float: right;
   font-size: 24px;
   letter-spacing: 2px;
+}
+
+#work .work-button {
+  justify-self: center;
 }
 
 #work img {
@@ -342,8 +346,8 @@ body {
 
 #equipment p {
   color: var(--white);
-  font-size: 34px;
-  line-height: 45px;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 #equipment button {
@@ -351,10 +355,14 @@ body {
   letter-spacing: 2px;
 }
 
+#equipment img {
+  width: 100%;
+}
+
 /* Partners */
 
 #partners h1 {
-  font-size: 80px;
+  font-size: 40px;
   letter-spacing: 2px;
   text-align: center;
   color: var(--white);
@@ -372,7 +380,7 @@ body {
   position: absolute;
   top: 0;
   content: "";
-  width: 250px;
+  width: 150px;
   height: 100%;
   z-index: 2;
 }
@@ -393,8 +401,8 @@ body {
 }
 
 #partners .logo_items img {
-  height: 200px;
-  margin: 0 30px;
+  height: 100px;
+  margin: 0 24px;
 }
 
 @keyframes slides {
@@ -558,14 +566,14 @@ body {
 }
 
 #page-contact h1 {
-  font-size: 100px;
+  font-size: 64px;
   color: var(--primary);
   margin-bottom: 0;
 }
 
 #page-contact h4 {
   color: var(--secondary);
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 96px;
 }
 
@@ -658,6 +666,20 @@ body {
 
 /* SFX Equipment PAGE */
 
+#page-equipment h1 {
+  font-size: 64px;
+  letter-spacing: 2px;
+  color: var(--primary);
+  text-align: center;
+}
+
+#page-equipment h2 {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
 #page-equipment {
   --plyr-color-main: var(--primary);
   padding-top: 75px;
@@ -725,6 +747,20 @@ body {
 
 /* Our Work PAGE */
 
+#page-work h2 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  color: var(--primary);
+  text-align: center;
+}
+
+#page-work h3 {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
 #page-work {
   background: radial-gradient(
       circle at top left,
@@ -751,7 +787,7 @@ body {
 }
 #page-work h1 {
   color: var(--primary);
-  font-size: 50px;
+  font-size: 22px;
 }
 
 #page-work .btn-close {
@@ -825,16 +861,134 @@ body {
   transform: translateY(0);
 }
 
+/* ABOUT US PAGE */
+
+.dim #nav {
+  background-color: var(--black);
+}
+
+#page-about {
+  padding-top: 70px;
+}
+
+#page-about p {
+  font-size: 32px;
+  color: var(--white);
+}
+
+#page-about .col-md-4 {
+  position: sticky;
+  top: 70px;
+  background-color: black;
+  padding-top: 20px;
+}
+
+#page-about #scrollspy {
+  position: sticky;
+  top: 180px;
+  height: fit-content;
+}
+
+#page-about a {
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: var(--secondary);
+  text-decoration: none;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+}
+
+#page-about a:hover,
+#page-about .active {
+  color: var(--primary);
+}
+
+#page-about .item {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--secondary);
+}
+
 /* MEDIA QUIRIES */
 
 @media screen and (min-width: 768px) {
+  /* SERVICES */
+  #services h1 {
+    font-size: 80px;
+  }
+
+  #services h2 {
+    font-size: 40px;
+  }
+
+  /* EQUIPMENT */
+  #equipment p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  /* PARTNERS */
+  #partners h1 {
+    font-size: 80px;
+  }
+  #partners .logo_items img {
+    height: 200px;
+    margin: 0 32px;
+  }
+
+  /* EQUIPMENT PAGE */
   #page-equipment img {
     width: 75%;
+  }
+  /* ABOUT PAGE */
+  #page-about a {
+    font-size: 36px;
+  }
+  #page-about p {
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  /* SERVICES */
+
+  #services .row {
+    justify-content: space-between;
+  }
+  /* WORK */
+  #work h1 {
+    text-align: right;
+  }
+  #work .work-button {
+    justify-self: right;
+  }
+  /* EQUIPMENT */
+  #equipment p {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  /* EQUIPMENT PAGE */
   #page-equipment img {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* SERVICES */
+
+  #services .service {
+    max-width: 350px;
+  }
+
+  /* WORK PAGE */
+
+  #page-work h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* SERVICES */
+
+  #services .service {
+    max-width: 400px;
   }
 }
