@@ -92,6 +92,7 @@ body {
 /* NAVBAR */
 
 #nav {
+  padding: 0;
   height: 75px;
   background: transparent;
   backdrop-filter: blur(25px);
@@ -109,6 +110,11 @@ body {
 
 #nav img {
   height: 100%;
+}
+
+#nav .brand {
+  font-size: 32px;
+  padding-top: 10px;
 }
 
 #nav li a {
@@ -866,7 +872,7 @@ body {
 
 /* ABOUT US PAGE */
 
-.dim #nav {
+/* .dim #nav {
   background-color: var(--black);
 }
 
@@ -910,6 +916,29 @@ body {
   padding-top: 56px;
   padding-bottom: 40px;
   border-bottom: 1px solid var(--secondary);
+} */
+
+#page-about .about-section {
+  padding-top: 100px;
+}
+#page-about .about-text h2 {
+  font-size: 80px;
+  color: var(--white);
+}
+#page-about .about-text p {
+  color: var(--secondary);
+  font-size: 32px;
+}
+#page-about .about-text a {
+  font-size: 28px;
+}
+#page-about .about-images img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 /* MEDIA QUIRIES */
