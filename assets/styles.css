@@ -941,6 +941,23 @@ body {
   aspect-ratio: 4/3;
 }
 
+/* THANK YOU */
+
+#header .thanks-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://partytimesa.com/media/images/our-work/mohamed-ramadan/2.jpeg");
+  background-size: cover;
+  width: 100%;
+}
+
+#header .thanks-page .container {
+  height: 100%;
+}
+
+#header .thanks-page h1 {
+  font-size: min(9svh, 22svw);
+}
+
 /* MEDIA QUIRIES */
 
 @media screen and (min-width: 768px) {
