@@ -1017,12 +1017,12 @@ body {
 
 #crew h3 {
   color: var(--primary);
-  font-size: 48px;
+  font-size: 40px;
 }
 
 #crew h4 {
   color: var(--white);
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: 2px;
 }
 
@@ -1034,6 +1034,8 @@ body {
 #crew .profile-img {
   overflow: hidden;
   border-radius: 8px;
+  max-width: 300px;
+  justify-self: center;
 }
 
 #crew .profile-card img {
@@ -1063,7 +1065,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -56px;
+  bottom: -44px;
   z-index: 2;
 }
 
