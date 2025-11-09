@@ -987,6 +987,91 @@ body {
   font-size: min(9svh, 22svw);
 }
 
+/* CREW */
+
+#crew {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+#crew .row {
+  row-gap: 80px;
+}
+
+#crew img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+#crew h1 {
+  color: var(--white);
+  font-size: 72px;
+}
+
+#crew h2 {
+  color: var(--secondary);
+  letter-spacing: 2px;
+  font-size: 32px;
+}
+
+#crew h3 {
+  color: var(--primary);
+  font-size: 48px;
+}
+
+#crew h4 {
+  color: var(--white);
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+#crew .profile-card {
+  border-radius: 8px;
+  position: relative;
+}
+
+#crew .profile-img {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#crew .profile-card img {
+  display: block;
+  width: 100%;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+#crew .profile-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 0.55) 65%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
+#crew .card-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -56px;
+  z-index: 2;
+}
+
+#crew .profile-card:hover img,
+#crew .profile-card.hover-effect img {
+  transform: scale(1.05);
+}
+
 /* MEDIA QUIRIES */
 
 @media screen and (min-width: 768px) {
