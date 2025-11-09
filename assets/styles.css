@@ -834,7 +834,7 @@ body {
 }
 
 #page-work .carousel-item {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
 }
 
 #page-work .carousel-item img {
@@ -873,7 +873,7 @@ body {
   font-size: 22px;
 }
 #page-work .work-card-img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
 }
 #page-work .work-card img {
   height: 100%;
