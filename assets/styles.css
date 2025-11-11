@@ -1001,7 +1001,6 @@ body {
 #crew img {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 #crew h1 {
@@ -1037,6 +1036,10 @@ body {
   max-width: 300px;
   justify-self: center;
 }
+#crew .profile-img.crew-img {
+  max-width: unset;
+  width: 95%;
+}
 
 #crew .profile-card img {
   display: block;
@@ -1060,6 +1063,14 @@ body {
     rgba(0, 0, 0, 0.85) 100%
   );
 }
+#crew .profile-card.crew-card::after {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(0, 0, 0, 0.55) 90%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
 
 #crew .card-info {
   position: absolute;
@@ -1067,6 +1078,10 @@ body {
   right: 0;
   bottom: -44px;
   z-index: 2;
+}
+#crew .card-info.crew-info {
+  bottom: -72px;
+  letter-spacing: 2px;
 }
 
 #crew .profile-card:hover img,
