@@ -1081,7 +1081,6 @@ body {
 }
 #crew .card-info.crew-info {
   bottom: -72px;
-  letter-spacing: 2px;
 }
 
 #crew .profile-card:hover img,
@@ -1172,3 +1171,4 @@ body {
     max-width: 400px;
   }
 }
+
